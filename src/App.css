@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
-}
+/* .Covid_card{
+    display: flex;
+    flex-direction: column-reverse;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+} */
+.asad{
+    display: flex;
+    justify-content: space-evenly;
+    
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SearchInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;   
+    
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputstyle{
+    height: 40px;
+    font-size: 20px;
+    background: rgb(20,2,64);
+    background: linear-gradient(90deg, rgba(20,2,64,1) 15%, rgba(6,78,78,1) 96%);
+    color: white;
+    border-radius: 4px;
+    border:none;
+    
 }
-
-.App-link {
-  color: #61dafb;
+body{
+    background: rgb(20,2,64);
+    background: linear-gradient(90deg, rgba(20,2,64,1) 26%, rgba(12,33,37,1) 94%);
 }
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.video__icon {
+  position: absolute;
+  width: 50px;
+  left: 20px;
+  top: 20px; }
+  .video__icon .circle--outer {
+    border: 1px solid #e50040;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 5px;
+    position: relative;
+    opacity: .8;
+    -webkit-animation: circle 2s ease-in-out infinite;
+            animation: circle 2s ease-in-out infinite; }
+  .video__icon .circle--inner {
+    background: #e50040;
+    left: 15px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: .8; }
+    .video__icon .circle--inner:after {
+      content: '';
+      display: block;
+      border: 2px solid #e50040;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      top: -4px;
+      left: -4px;
+      position: absolute;
+      opacity: .8;
+      -webkit-animation: circle 2s ease-in-out .2s infinite;
+              animation: circle 2s ease-in-out .2s infinite; }
+  .video__icon p {
+    color: #000;
+    text-align: center; }
 
-@keyframes App-logo-spin {
+@-webkit-keyframes circle {
   from {
-    transform: rotate(0deg);
-  }
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  
   to {
-    transform: rotate(360deg);
-  }
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0; } }
+
+@keyframes circle {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+    } }
+
+.tablerowid{
+    color: white;
+}
+.Heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 30px;
+}
+.container-fluid{
+    margin-left: -20px;
+}
+.liveTracker{
+    margin-top: 20px;
 }
